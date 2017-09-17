@@ -20,6 +20,7 @@ public class ProjectFury_Launcher extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent loginScreen = FXMLLoader.load(getClass().getResource("Window_Login.fxml"));
         
         Scene scene = new Scene(root);
         stage.setTitle("ProjectFury");
