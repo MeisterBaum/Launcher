@@ -1,55 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: gray;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="projectfury_launcher.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.FXMLDocumentController">
     <children>
-      <SplitPane dividerPositions="0.12417218543046357" orientation="VERTICAL" prefHeight="606.0" prefWidth="804.0">
+      <ImageView fitHeight="783.0" fitWidth="1024.0" layoutY="-14.0" pickOnBounds="true">
+         <image>
+            <Image url="@Pictures/Logo.jpg" />
+         </image>
+      </ImageView>
+      <ToolBar blendMode="MULTIPLY" depthTest="DISABLE" focusTraversable="false" prefHeight="60.0" prefWidth="1024.0">
         <items>
-          <AnchorPane blendMode="EXCLUSION" minHeight="0.0" minWidth="0.0" prefHeight="54.0" prefWidth="802.0">
-               <children>
-                  <Button layoutX="634.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="154.0" text="Exit">
-                     <effect>
-                        <Glow level="0.34" />
-                     </effect>
-                     <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="154.0" text="Updates">
-                     <effect>
-                        <Glow level="0.34" />
-                     </effect>
-                     <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="324.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="154.0" text="Play" wrapText="true">
-                     <effect>
-                        <Glow level="0.34" />
-                     </effect>
-                     <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="802.0">
-               <children>
-                  <ImageView fitHeight="600.0" fitWidth="804.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../../../../../Users/Alexander/Downloads/maxresdefault.jpg" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Updates" prefHeight="56.0" prefWidth="137.0" text="Updates">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Soldier" prefHeight="56.0" prefWidth="130.0" text="Soldier">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Market" prefHeight="56.0" prefWidth="130.0" text="Market">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" cancelButton="true" mnemonicParsing="false" onAction="#bp_Play" prefHeight="56.0" prefWidth="210.0" text="Play" textFill="#003cff">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Friends" prefHeight="56.0" prefWidth="130.0" text="Friends">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Donate" prefHeight="56.0" prefWidth="130.0" text="Donate">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Exit" prefHeight="56.0" prefWidth="120.0" text="Exit">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
         </items>
-      </SplitPane>
+      </ToolBar>
+      <WebView fx:id="wv_main" layoutY="66.0" prefHeight="703.0" prefWidth="1024.0" visible="false" />
+      <Button fx:id="btnClose" layoutX="444.0" layoutY="713.0" mnemonicParsing="false" onAction="#bp_Close" prefHeight="56.0" prefWidth="137.0" style="-fx-background-color: #171e28;" text="Close" textFill="#fff6f6" visible="false">
+         <effect>
+            <Glow level="0.34" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>
