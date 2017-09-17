@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" layoutY="-14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../Users/Alexander/Downloads/maxresdefault.jpg" />
+         </image>
+      </ImageView>
+      <ToolBar blendMode="MULTIPLY" depthTest="DISABLE" focusTraversable="false" prefHeight="60.0" prefWidth="1024.0">
+        <items>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" prefHeight="56.0" prefWidth="137.0" text="Updates">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" prefHeight="56.0" prefWidth="130.0" text="Soldier">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" prefHeight="56.0" prefWidth="130.0" text="Market">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" cancelButton="true" mnemonicParsing="false" prefHeight="56.0" prefWidth="210.0" text="Play" textFill="#003cff">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" prefHeight="56.0" prefWidth="130.0" text="Friends">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" prefHeight="56.0" prefWidth="130.0" text="Donate">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" prefHeight="56.0" prefWidth="120.0" text="Exit">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+      <Sphere layoutX="512.0" layoutY="400.0" radius="0.77" />
+    </children>
+</AnchorPane>
