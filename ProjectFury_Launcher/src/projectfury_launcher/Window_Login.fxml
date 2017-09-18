@@ -14,7 +14,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.LoginController">
    <children>
-      <ImageView fitHeight="768.0" fitWidth="1024.0" layoutX="-20.0" opacity="0.36" pickOnBounds="true">
+      <ImageView fitHeight="768.0" fitWidth="1024.0" layoutX="-1.0" layoutY="1.0" opacity="0.36" pickOnBounds="true">
          <image>
             <Image url="@Pictures/Logo.jpg" />
          </image>
