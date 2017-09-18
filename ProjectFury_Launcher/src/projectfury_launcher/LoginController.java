@@ -53,6 +53,9 @@ public class LoginController implements Initializable {
     Label l_password;
     
     
+    //Pictures
+    
+    
     private void OpenLoginRegister()
     {
         p_minimenu.setVisible(true);
@@ -60,6 +63,22 @@ public class LoginController implements Initializable {
         btn_SignUp.setVisible(true);
         HideLogin();
         HideRegister();
+    }
+    
+    private void OpenLogin()
+    {
+        tf_email.setVisible(true);
+        pf_password.setVisible(true);
+        btn_Login.setVisible(true);
+        l_email.setVisible(true);
+        l_password.setVisible(true);
+        btn_Back.setVisible(true);
+    }
+    
+    private void HideLoginRegister()
+    {
+        btn_SignIn.setVisible(false);
+        btn_SignUp.setVisible(false);
     }
     
     private void HideLogin()
@@ -76,12 +95,13 @@ public class LoginController implements Initializable {
     {
         
     }
+
     
    @FXML 
     private void bp_SignIn(ActionEvent event)
     {
-        
-        
+        HideLoginRegister();
+        OpenLogin();
     }
     
     @FXML
@@ -93,6 +113,15 @@ public class LoginController implements Initializable {
     
     @FXML
     private void bp_Back(ActionEvent event)
+    {
+        
+        HideLogin();
+        HideRegister();
+        OpenLoginRegister();
+    }
+    
+    @FXML
+    private void bp_Login(ActionEvent event)
     {
         
         

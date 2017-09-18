@@ -37,7 +37,7 @@
                   <Font name="System Bold" size="30.0" />
                </font>
             </Button>
-            <Button fx:id="btn_SignIn" blendMode="OVERLAY" layoutX="44.0" layoutY="280.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="235.0" style="-fx-background-color: black;" text="Sign in" textFill="WHITE" visible="false">
+            <Button fx:id="btn_SignIn" blendMode="OVERLAY" layoutX="44.0" layoutY="280.0" mnemonicParsing="false" onAction="#bp_SignIn" prefHeight="65.0" prefWidth="235.0" style="-fx-background-color: black;" text="Sign in" textFill="WHITE" visible="false">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
@@ -45,7 +45,7 @@
                   <DropShadow height="38.79" radius="19.6375" width="41.76" />
                </effect>
             </Button>
-            <Button fx:id="btn_Login" blendMode="OVERLAY" layoutX="45.0" layoutY="380.0" mnemonicParsing="false" onAction="#bp_SignIn" pickOnBounds="false" prefHeight="46.0" prefWidth="235.0" style="-fx-background-color: black;" text="Sign in" textFill="WHITE">
+            <Button fx:id="btn_Login" blendMode="OVERLAY" layoutX="45.0" layoutY="380.0" mnemonicParsing="false" onAction="#bp_Login" pickOnBounds="false" prefHeight="46.0" prefWidth="235.0" style="-fx-background-color: black;" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="22.0" />
                </font>
@@ -54,7 +54,7 @@
                </effect>
             </Button>
             <PasswordField fx:id="pf_password" layoutX="32.0" layoutY="313.0" prefHeight="46.0" prefWidth="260.0" />
-            <Label fx:id="l_password" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="35.0" layoutY="273.0" prefHeight="40.0" prefWidth="254.0" style="-fx-background-color: #767676;" text="Passwort" textAlignment="CENTER">
+            <Label fx:id="l_password" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="35.0" layoutY="273.0" prefHeight="40.0" prefWidth="254.0" style="-fx-background-color: #767676;" text="Password" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="28.0" />
                </font>
