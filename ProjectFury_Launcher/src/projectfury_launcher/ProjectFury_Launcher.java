@@ -22,7 +22,7 @@ public class ProjectFury_Launcher extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         Parent loginScreen = FXMLLoader.load(getClass().getResource("Window_Login.fxml"));
         
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(loginScreen);
         stage.setTitle("ProjectFury");
         stage.setScene(scene);
         stage.show();

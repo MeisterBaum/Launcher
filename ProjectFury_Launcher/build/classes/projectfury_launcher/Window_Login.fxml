@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.LoginController">
-    
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.LoginController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" layoutX="-20.0" opacity="0.36" pickOnBounds="true">
+         <image>
+            <Image url="@Pictures/Logo.jpg" />
+         </image>
+      </ImageView>
+      <Pane id="p_minimenu" fx:id="p_minimenu" layoutX="357.0" layoutY="100.0" prefHeight="515.0" prefWidth="323.0" style="-fx-background-color: #767676;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow color="#2c2a2a" height="133.68" radius="64.11500000000001" spread="0.6" width="124.78" />
+         </effect>
+         <children>
+            <ImageView fx:id="iv_lock" fitHeight="208.0" fitWidth="165.0" layoutX="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Pictures/lock.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_SignUp" blendMode="OVERLAY" layoutX="44.0" layoutY="380.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="235.0" style="-fx-background-color: black;" text="Sign up" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_SignIn" blendMode="OVERLAY" layoutX="44.0" layoutY="280.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="235.0" style="-fx-background-color: black;" text="Sign in" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow height="38.79" radius="19.6375" width="41.76" />
+               </effect>
+            </Button>
+            <Button fx:id="btn_Login" blendMode="OVERLAY" layoutX="45.0" layoutY="380.0" mnemonicParsing="false" onAction="#bp_SignIn" pickOnBounds="false" prefHeight="46.0" prefWidth="235.0" style="-fx-background-color: black;" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow height="38.79" radius="19.6375" width="41.76" />
+               </effect>
+            </Button>
+            <PasswordField fx:id="pf_password" layoutX="32.0" layoutY="313.0" prefHeight="46.0" prefWidth="260.0" />
+            <Label fx:id="l_password" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="35.0" layoutY="273.0" prefHeight="40.0" prefWidth="254.0" style="-fx-background-color: #767676;" text="Passwort" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="l_email" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="35.0" layoutY="172.0" prefHeight="40.0" prefWidth="254.0" style="-fx-background-color: #767676;" text="E-mail" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_email" layoutX="32.0" layoutY="212.0" prefHeight="46.0" prefWidth="260.0" />
+            <Button fx:id="btn_Back" blendMode="OVERLAY" layoutX="44.0" layoutY="445.0" mnemonicParsing="false" onAction="#bp_Back" pickOnBounds="false" prefHeight="46.0" prefWidth="235.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow height="38.79" radius="19.6375" width="41.76" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>
