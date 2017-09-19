@@ -25,6 +25,7 @@ import javafx.scene.web.WebView;
 public class FXMLDocumentController implements Initializable {
     
     
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         engine = wv_main.getEngine();

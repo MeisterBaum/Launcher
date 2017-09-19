@@ -23,6 +23,46 @@ import javafx.scene.layout.Pane;
 public class LoginController implements Initializable {
     
     
+        /*
+    
+       So Siridutt this is the code file.
+       This @FXML is annonation i hope i wrote it correct
+       u need this if u want controll over  some elements in the
+       code. If u add ,we say a Textfield, then u must go 
+       under code on the right in the sidebar (make sure u select the element) and must look for
+       fx:id and there u write a id for the object. And if u done this
+       u get a warning but this is not interessted maybe u will understand
+       what it say. So now u must go in this file and wirte:
+    
+         @FXML
+          TextField (and as name u must use what u have typed in fx:id);
+
+         So u can use the TextField now.
+         
+         And this work with all other things in Scene Builder.
+         
+         
+    
+    Also u must declare if u add a button the Action.
+    How do u do this? U can look the button i have already created.
+    Remember: If u need something here , u must go in the Scene Builder 
+    sidebar under coding.
+    
+    So u Login Method u must wirte here in this file!
+    
+    
+    
+    This File is like a Controller for the fxml File.
+    The Programm starts in the ProjectFury_Launcher.java
+    
+    The Button Action for the Login button is: bp_Login
+    
+    Goodluck if u have any problems
+    ask me :D
+    
+    */
+    
+    
     
     @FXML
     Pane p_minimenu;
