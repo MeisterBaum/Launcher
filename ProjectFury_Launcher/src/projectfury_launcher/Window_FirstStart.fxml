@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="projectfury_launcher.FirstStartController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" opacity="0.22" pickOnBounds="true">
+         <image>
+            <Image url="@Pictures/Logo.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="71.0" prefWidth="1024.0" style="-fx-background-color: gray;" />
+   </children>
+</AnchorPane>
