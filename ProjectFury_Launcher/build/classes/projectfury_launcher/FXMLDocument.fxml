@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
 
@@ -85,5 +87,22 @@
             <Font name="System Bold" size="26.0" />
          </font>
       </Button>
+      <Pane layoutY="734.0" prefHeight="35.0" prefWidth="1024.0" style="-fx-background-color: gray;">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="-3.0" prefHeight="44.0" prefWidth="514.0" text="Registered Users:     " textAlignment="RIGHT" textFill="#c79e22">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Label>
+            <Label layoutX="512.0" layoutY="-1.0" prefHeight="44.0" prefWidth="514.0" text="0" textFill="#e4b46b">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
     </children>
 </AnchorPane>

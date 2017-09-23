@@ -15,14 +15,18 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
-
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author Alexander
  */
 public class LoginController implements Initializable {
     
-    
+Connection conn=null;
+PreparedStatement pst=null;
+ResultSet rs=null;
         /*
     
        So Siridutt this is the code file.
@@ -163,7 +167,22 @@ public class LoginController implements Initializable {
     @FXML
     private void bp_Login(ActionEvent event)
     {
-        
+        Connection connection;
+    try {
+        connection = MySQLConnect.ConnectDB();
+    } catch (ClassNotFoundException ex) {
+        Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+        return;
+    }
+        String Sql="Select * from users where email=? and password=?";
+            try {
+                pst=connection.prepareStatement(Sql);
+                pst.setString(1, tf_email.getText());
+                pst.setString(2, pf_password.getText());
+                rs=pst.executeQuery();
+              } catch (SQLException ex) {
+                Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+            }
         
     }
     

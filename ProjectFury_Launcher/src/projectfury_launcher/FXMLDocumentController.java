@@ -107,19 +107,9 @@ public class FXMLDocumentController implements Initializable {
        System.exit(0);
     }
     @FXML
-    private void bp_Donate(ActionEvent ev)
+    private void bp_Settings(ActionEvent ev)
     {
-        if(!wv_main.isVisible())
-       {
-            wv_main.setVisible(true);
-            engine.setJavaScriptEnabled(true);
-            engine.load("http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784");
-            btnClose.setVisible(true);
-       }
-       else{
-            engine.setJavaScriptEnabled(true);
-            engine.load("http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784");
-     }
+        
     }
     
     @FXML
