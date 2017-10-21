@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.FirstStartController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.FirstStartController">
    <children>
-      <ImageView fx:id="iv_Project" fitHeight="768.0" fitWidth="1024.0" layoutX="-6.0" opacity="0.0" pickOnBounds="true">
-         <image>
-            <Image url="@Pictures/Logo.jpg" />
-         </image>
-      </ImageView>
+      <MediaView fx:id="mv_credits" fitHeight="200.0" fitWidth="200.0" layoutX="412.0" layoutY="284.0" />
    </children>
 </AnchorPane>

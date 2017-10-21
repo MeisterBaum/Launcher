@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectfury_launcher.FXMLDocumentController">
     <children>
       <ImageView fitHeight="783.0" fitWidth="1024.0" layoutY="-14.0" pickOnBounds="true">
          <image>
@@ -44,7 +44,7 @@
                   <Font name="System Bold" size="26.0" />
                </font>
             </Button>
-            <Button blendMode="EXCLUSION" cancelButton="true" mnemonicParsing="false" onAction="#bp_Play" prefHeight="56.0" prefWidth="210.0" text="Play" textFill="#003cff">
+            <Button blendMode="EXCLUSION" cancelButton="true" mnemonicParsing="false" onAction="#bp_Play" prefHeight="56.0" prefWidth="204.0" text="Play" textFill="#003cff">
                <effect>
                   <Glow level="0.34" />
                </effect>
@@ -52,7 +52,7 @@
                   <Font name="System Bold" size="26.0" />
                </font>
             </Button>
-            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Friends" prefHeight="56.0" prefWidth="130.0" text="Friends">
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Friends" prefHeight="56.0" prefWidth="126.0" text="Friends">
                <effect>
                   <Glow level="0.34" />
                </effect>
@@ -60,7 +60,7 @@
                   <Font name="System Bold" size="26.0" />
                </font>
             </Button>
-            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Donate" prefHeight="56.0" prefWidth="130.0" text="Donate">
+            <Button blendMode="EXCLUSION" mnemonicParsing="false" onAction="#bp_Settings" prefHeight="56.0" prefWidth="137.0" text="Settings">
                <effect>
                   <Glow level="0.34" />
                </effect>
@@ -89,7 +89,7 @@
       </Button>
       <Pane layoutY="734.0" prefHeight="35.0" prefWidth="1024.0" style="-fx-background-color: gray;">
          <children>
-            <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="-3.0" prefHeight="44.0" prefWidth="514.0" text="Registered Users:     " textAlignment="RIGHT" textFill="#c79e22">
+            <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="-3.0" prefHeight="44.0" prefWidth="534.0" text="Registered Users: " textAlignment="RIGHT" textFill="#c79e22">
                <font>
                   <Font name="System Bold" size="22.0" />
                </font>
@@ -97,7 +97,7 @@
                   <Glow level="1.0" />
                </effect>
             </Label>
-            <Label layoutX="512.0" layoutY="-1.0" prefHeight="44.0" prefWidth="514.0" text="0" textFill="#e4b46b">
+            <Label layoutX="531.0" layoutY="-1.0" prefHeight="44.0" prefWidth="495.0" text="0" textFill="#e4b46b">
                <font>
                   <Font size="22.0" />
                </font>

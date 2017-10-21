@@ -5,7 +5,10 @@
  */
 package projectfury_launcher;
 
+import java.io.IOException;
 import java.net.URL;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,6 +21,8 @@ import javafx.scene.layout.Pane;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+
 /**
  *
  * @author Alexander
@@ -71,6 +76,7 @@ ResultSet rs=null;
     @FXML
     Pane p_minimenu;
     
+    Secruity secure = new Secruity();
     
     //All Buttons
     @FXML
@@ -165,24 +171,12 @@ ResultSet rs=null;
     }
     
     @FXML
-    private void bp_Login(ActionEvent event)
+    private void bp_Login(ActionEvent event) throws IOException, KeyManagementException, NoSuchAlgorithmException
     {
-        Connection connection;
-    try {
-        connection = MySQLConnect.ConnectDB();
-    } catch (ClassNotFoundException ex) {
-        Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
-        return;
-    }
-        String Sql="Select * from users where email=? and password=?";
-            try {
-                pst=connection.prepareStatement(Sql);
-                pst.setString(1, tf_email.getText());
-                pst.setString(2, pf_password.getText());
-                rs=pst.executeQuery();
-              } catch (SQLException ex) {
-                Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
-            }
+         if(secure.SendLogin(tf_email.getText(), pf_password.getText()) == true)
+         {
+             
+         }
         
     }
     
